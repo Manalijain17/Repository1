@@ -1,0 +1,12 @@
+allowed = "abc"
+words = ["a","b","c","ab","ac","bc","abc"]
+count=0
+for i in words:
+    print(i)
+    for j in range(len(allowed)):
+        if allowed[j] in i:
+            count+=1
+        continue
+    #if allowed in i:
+     #   count+=1
+print(count)
